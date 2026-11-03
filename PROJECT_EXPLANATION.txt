@@ -1,0 +1,35 @@
+PROJECT: AI-Based Antenna Parameter Prediction Using Machine Learning
+
+Antenna: Rectangular microstrip patch antenna.
+
+Aim:
+To demonstrate how machine learning can estimate antenna performance parameters
+from antenna dimensions and substrate properties.
+
+Inputs:
+1. Patch length (mm)
+2. Patch width (mm)
+3. Substrate dielectric constant
+4. Substrate height (mm)
+5. Operating frequency (GHz)
+
+Outputs:
+1. Resonant frequency (GHz)
+2. Gain (dBi)
+3. Bandwidth (%)
+4. Return loss S11 (dB)
+
+Algorithm:
+Random Forest Regression.
+
+Working:
+A dataset is loaded and divided into training and testing data. A Random Forest
+Regression model learns patterns between the input antenna details and output
+parameters. The trained model is saved and used by a Streamlit web app. A user
+enters the antenna details and receives estimated output values.
+
+Important:
+The supplied dataset is synthetic and based on simplified approximate formulas.
+This is a machine-learning demonstration, not a validated antenna design tool.
+For accurate engineering results, use CST/HFSS/openEMS simulation or measured
+antenna data and validate the trained model.
